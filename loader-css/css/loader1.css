@@ -1,0 +1,34 @@
+
+/* loader 1 */
+.loader-1{
+   text-align: center;
+   width: 200px;
+   height: 200px;
+   position: relative;
+}
+.loader-1 .loader {
+   width: 100%;
+   height: 100%;
+   border-radius: 50%;
+   border: 20px solid #fff;
+   border-top: 20px solid transparent;
+   border-bottom: 20px solid transparent;
+   animation: spin 1s linear infinite;
+}
+
+.loader-1 .loader-text {
+   font-size: 20px;
+   font-weight: bold;
+   position: absolute;
+   top: 45%;
+   width: 100%;
+}
+
+@keyframes spin {
+   0% {
+      transform: rotate(0deg);
+   }
+   100% {
+      transform: rotate(360deg);
+   }
+}

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Side Bar</title>
+   <link rel="stylesheet" href="main.css">
+   <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100" rel="stylesheet" />
+</head>
+<body>
+   <div id="sidemenu"  class="menu-collapsed">
+      <div class="header">
+         <div class="title">
+            <span>SideBar</span>
+         </div>
+         <div class="menu-btn" id="menu-btn">
+            <span class="material-symbols-outlined">
+               menu
+               </span>
+         </div>
+      </div>
+
+      <div class="profile">
+         <div class="photo">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/User_icon-cp.svg/1200px-User_icon-cp.svg.png" alt="photo"
+               >
+         </div>
+         <div class="name">
+            <span>Alonso Cordova</span>
+         </div>
+      </div>
+
+      <div class="menu-items">
+         <div class="item">
+            <a href="">
+               <div class="icon">
+                  <span class="material-symbols-outlined">search</span>
+               </div>
+               <div class="title">Search</div>
+            </a>
+         </div>
+         <div class="item">
+            <a href="">
+               <div class="icon">
+                  <span class="material-symbols-outlined">home</span>
+               </div>
+               <div class="title">Home</div>
+            </a>
+         </div>
+         <div class="item">
+            <a href="">
+               <div class="icon">
+                  <span class="material-symbols-outlined">settings</span>
+               </div>
+               <div class="title">
+                  Menu
+               </div>
+            </a>
+         </div>
+      </div>
+   </div>
+   <div class="main-container">
+      Hello
+   </div>
+
+
+   <script lang="javascript">
+      let btn  =  document.querySelector('#menu-btn');
+      let menu =  document.querySelector('#sidemenu');
+      btn.addEventListener('click', () => {
+         menu.classList.toggle('menu-expanded');
+         menu.classList.toggle('menu-collapsed');
+
+         document.querySelector('body').classList.toggle('body-expanded');
+
+      });
+   </script>
+</body>
+</html>
