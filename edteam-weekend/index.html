@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="static/css/style.css">
     <link rel="stylesheet" href="static/css/banner.css">
     <link rel="stylesheet" href="static/css/graphic.css">
+
 </head>
 
 <body>
@@ -32,19 +33,19 @@
                     <span>Empieza en: </span>
                     <div class="flex">
                         <p class="countdown-item flex">
-                            <span class="countdown-number">03</span>
+                            <span class="countdown-number" id="day">00</span>
                             <span class="countdown-letter">D</span>
                         </p>
                         <p class="countdown-item flex">
-                            <span class="countdown-number">03</span>
+                            <span class="countdown-number" id="hour">00</span>
                             <span class="countdown-letter">H</span>
                         </p>
                         <p class="countdown-item flex">
-                            <span class="countdown-number">03</span>
+                            <span class="countdown-number" id="minute">00</span>
                             <span class="countdown-letter">M</span>
                         </p>
                         <p class="countdown-item flex">
-                            <span class="countdown-number">03</span>
+                            <span class="countdown-number" id="second">00</span>
                             <span class="countdown-letter">S</span>
                         </p>
                     </div>
@@ -75,6 +76,8 @@
             </div>
         </div>
     </section>
+
+    <script src="static/js/index.js"></script>
 </body>
 
 </html>
