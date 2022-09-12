@@ -58,3 +58,14 @@ the mouse over the flip box container */
 }
 
 
+
+
+
+/* para estructurar la pagina */
+.row{
+    display: flex;
+}
+
+.row div{
+    margin: 1rem auto;
+}
